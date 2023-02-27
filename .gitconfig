@@ -1,0 +1,15 @@
+[user]
+	email = alejandro.torres@siriusxm.com
+	signingkey = 11BB2D1A
+[alias]
+	co  = checkout
+	cm  = commit -m
+	poh = push origin head
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
+[gpg]
+	program = gpg
+[core]
+	editor = vim
