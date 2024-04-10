@@ -119,25 +119,37 @@
 		<Setting name="Drag and Drop disabled">0</Setting>
 		<Setting name="Disable update footer">0</Setting>
 		<Setting name="Highest shown overlay id">0</Setting>
-		<Setting name="Last automatic update check">2023-03-15 15:17:34</Setting>
 		<Setting name="Greeting version">3.63.2.1</Setting>
 		<Setting name="Last automatic update version">3.63.2.1</Setting>
-		<Setting name="Update Check New Version" platform="mac">nightly 2023-03-15 https://filezilla-project.org/nightlies/2023-03-15/x86_64-apple-darwin18.2.0/FileZilla3.app.tar.bz2 15473700 sha512 7d6e3ccef73b783b57fb65eb18f410b9387c69ddf0ea9584112615974180b9652a9e4844e75e9ed487d78d47cf64bc0099f357d85c3c7ba2f06d1437cefc5fc8 sig:G+BdulrnM08mONvmNL11ydjOn2qgfu6AWhbTxhIE3QJmz0qFCHWcMljrJw3BT7JVQEgpJW0CssN8deEEYqK/Bw
-release 3.62.2 https://dl3.cdn.filezilla-project.org/FileZilla_3.62.2_macosx-x86.app.tar.bz2 15435216 sha512 eeaff6f04842e9bced7ca86917ff855ab19b04fe2552d7d972fa14f0b7e91dd334f1fc925c1c028e6b60c1d7808c7eefb9e783bb0d714f24fa396a63140bd43e sig:xdFp6ENt9yunz1XV8ypblGFrTZr9NWKGCKqXoIYnOFtZRju8qUSAEmifXqjg0KIOtmyWuOB8djWYCLVjeQdEBQ
-</Setting>
 		<Setting name="Prompt password save">0</Setting>
 		<Setting name="Queue column widths">180 60 180 80 60 150</Setting>
 		<Setting name="Local filelist shown columns">1111</Setting>
 		<Setting name="Remote filelist shown columns">111111</Setting>
 		<Setting name="Local filelist column order">0,1,2,3</Setting>
 		<Setting name="Remote filelist column order">0,1,2,3,4,5</Setting>
-		<Setting name="Local filelist sortorder">0 0</Setting>
 		<Setting name="File associations (v2)" platform="mac">html /System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app %f
 log /System/Applications/Utilities/Console.app %f</Setting>
 		<Setting name="Local filelist colwidths">362 80 120 120</Setting>
-		<Setting name="Remote filelist colwidths">592 75 80 100 80 85</Setting>
-		<Setting name="Window position and size">0 1836 25 1508 1229 </Setting>
-		<Setting name="Splitter positions (v2)">50 -423 500000000 117 117 500000000</Setting>
+		<Setting name="Remote filelist sortorder">1 0</Setting>
+		<Setting name="Local filelist sortorder">1 0</Setting>
+		<Setting name="Remote filelist colwidths">592 75 80 7 145 85</Setting>
+		<Setting name="Last automatic update check">2023-08-20 08:38:33</Setting>
+		<Setting name="Update Check New Version" platform="mac">nightly 2023-08-20 https://filezilla-project.org/nightlies/2023-08-20/x86_64-apple-darwin18.2.0/FileZilla3.app.tar.bz2 15162733 sha512 334c4de2712f0c3fdc83226bf225a250a7f811f21320211af9958e7abf82d1a0e27942e109b4907accbc065d070ee019954e5c0e60775a2d541a9f552b31c294 sig:jCQS70jqBPeFzzK4ST4rtPZxw73XRXxdQhwPnSAS+hGCF8j/VSxicI9K9g0sH/31tnBUk6TelEqu9aop/951CA
+release 3.64.0 https://dl2.cdn.filezilla-project.org/FileZilla_3.64.0_macosx-x86.app.tar.bz2 15289763 sha512 ff67a95345fa4c20563a58272ce61e1ce9b8db8c5a1d1ae24ea65c17ff5bcbd9552ebea182b06313bfd03c7a9510353999deff7b0128ea009b44c3d118516443 sig:C5uWxE6OT8UIB1g8jDrkMH+HS1fYPpsGfzUX4fKOMJ69RSlVMfYMxU7DOqAagBLyjedFUxefoAHjeyxlKmMVCQ
+
+3.64.0 (2023-04-26)
+
+- Fixed refresh of directory trees when filters changing
+- Updated to libfilezilla 0.42.2
+
+3.64.0-rc1 (2023-04-13)
+
+- MSW: Additional icon sizing fixes on high DPI scale factors
+- Updated to libfilezilla 0.42.0
+- Switched to .tar.xz for source tarballs
+</Setting>
+		<Setting name="Window position and size">0 153 87 1936 1229 </Setting>
+		<Setting name="Splitter positions (v2)">50 -404 506944444 100 100 500000000</Setting>
 		<Setting name="Tab data" sensitive="1">
 			<Tabs>
 				<Tab connected="1" selected="1">
@@ -152,11 +164,10 @@ log /System/Applications/Utilities/Console.app %f</Setting>
 					<EncodingType>Auto</EncodingType>
 					<BypassProxy>0</BypassProxy>
 					<Site></Site>
-					<RemotePath>1 0 3 www 25 cognican.dev.solinter.net</RemotePath>
-					<LocalPath>/Users/alejandro/workspace/cognican/cognican.dev.solinter.net/</LocalPath>
+					<RemotePath>1 0 3 www 25 cognican.dev.solinter.net 8 includes 9 instagram</RemotePath>
+					<LocalPath>/Users/alejandro/workspace/cognican/cognican.dev.solinter.net/includes/instagram/</LocalPath>
 				</Tab>
 			</Tabs>
 		</Setting>
-		<Setting name="Remote filelist sortorder">1 0</Setting>
 	</Settings>
 </FileZilla3>

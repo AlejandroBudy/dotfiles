@@ -1,6 +1,13 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
 #if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
 #  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 #fi
@@ -17,7 +24,7 @@ export ZSH="/Users/alejandro/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="miloshadzic"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -82,6 +89,7 @@ ZSH_THEME="miloshadzic"
 plugins=(
   git
   zsh-syntax-highlighting
+  zsh-autosuggestions
   z
   )
 
@@ -116,15 +124,23 @@ source $ZSH/oh-my-zsh.sh
 # source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 export GPG_TTY=$TTY
-
+export LOCALSTACK_AUTH_TOKEN="ls-zejuluVe-Waji-8464-ceDu-kABObeZud759"
 alias ll="exa -la"
-
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/alejandro/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
+export GITHUB_TOKEN=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
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [[ -s "/Users/alejandro/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/alejandro/.sdkman/bin/sdkman-init.sh"
 source $HOME/.sde/profile/profile.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
