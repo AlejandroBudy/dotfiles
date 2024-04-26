@@ -1,0 +1,37 @@
+[user]
+	email = alejandro.torres@siriusxm.com
+	signingkey = 11BB2D1A
+	name = alejandrobudy
+[alias]
+	co  = checkout
+	cm  = commit -m
+	poh = push origin head
+	ds = diff --staged
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
+[gpg]
+	program = gpg
+[core]
+	editor = nvim
+	excludesfile = .gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[interactive]
+    diffFilter = delta --color-only
+[add.interactive]
+    useBuiltin = false # required for git 2.37.0
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    line-numbers = true	
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default    
+    tool = vimdiff 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

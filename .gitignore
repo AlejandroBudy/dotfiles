@@ -1,0 +1,12 @@
+**/node_modules
+.DS_Store
+**/raycast
+**/filezilla
+**/configstore
+**/fish
+**/jgit
+**/iterm2
+**/github-copilot
+**/op
+**/*/hosts.json
+**/*/hosts.yml
