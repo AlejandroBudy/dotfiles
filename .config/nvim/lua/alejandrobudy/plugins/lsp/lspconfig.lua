@@ -48,9 +48,6 @@ return {
 				opts.desc = "See available code actions"
 				keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
 
-				opts.desc = "show implementation"
-				keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
-
 				keymap.set("n", "gds", vim.lsp.buf.document_symbol, { desc = "List symbols in document" })
 				keymap.set("n", "<leader>cl", vim.lsp.codelens.run, { desc = "Open CodeLens action menu" })
 				keymap.set("n", "<leader>sh", vim.lsp.buf.signature_help, { desc = "Show signature help" })
