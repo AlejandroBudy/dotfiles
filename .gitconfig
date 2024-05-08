@@ -4,7 +4,7 @@
 	name = alejandrobudy
 [alias]
 	co  = checkout
-	cm  = commit -m
+	cm  = commit -S -m
 	poh = push origin head
 	ds = diff --staged
 [commit]
