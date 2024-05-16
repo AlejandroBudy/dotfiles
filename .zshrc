@@ -124,7 +124,14 @@ source $ZSH/oh-my-zsh.sh
 # source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 export GPG_TTY=$TTY
+
+
+eval "$(zoxide init zsh)"
+
+
+##### ALIASES #####
 alias ll="exa -la"
+alias ls="eza --icons=always"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/alejandro/.rd/bin:$PATH"
