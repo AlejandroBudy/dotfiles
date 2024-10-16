@@ -12,6 +12,7 @@ return {
 			view = {
 				width = 40,
 				relativenumber = true,
+				-- adaptive_size = true,
 			},
 			-- change folder arrow icons
 			renderer = {
