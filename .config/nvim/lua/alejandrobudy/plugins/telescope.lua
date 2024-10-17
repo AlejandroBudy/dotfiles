@@ -35,5 +35,6 @@ return {
 		keymap.set("n", "<leader>fm", "<cmd>Telescope metals commands<cr>", { desc = "Open metals commands" })
 		keymap.set("n", "<leader>fc", "<cmd>Telescope command_history<cr>", { desc = "Open command history" })
 		keymap.set("n", "<leader>fk", "<cmd>Telescope marks<cr>", { desc = "Open marks" })
+		keymap.set("n", "<leader>fo", "<cmd>Telescope registers<cr>", { desc = "Open registers" })
 	end,
 }
